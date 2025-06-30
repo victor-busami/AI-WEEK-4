@@ -1,244 +1,90 @@
-# 🚀 Team Collaboration Guide
-
-## Hey Team! 👋
-
-Welcome to our project! I've put together this guide to help everyone collaborate smoothly on our GitHub repository. Please take a few minutes to read through this — it'll save us all time and prevent headaches down the road.
+# Week 4 Assignment: AI in Software Engineering  
+### Theme: **Building Intelligent Software Solutions** 💻🤖
 
 ---
 
-## 📌 **🚨 WEEKLY TASK REMINDER 🚨**
+## 🎯 Objective
 
-### ✅ **Choose Your Preferred IDE (Jupyter Notebook Strongly Recommended)**
+This assignment evaluates your understanding of AI applications in software engineering through:
 
-> You are free to use any IDE you're comfortable with, **BUT** we **strongly recommend using [Jupyter Notebook](https://jupyter.org/)** for this project.
-> It’s especially helpful for **data science tasks** involving `.ipynb` files, data exploration, and cell-based experimentation.
+- **Theoretical Analysis**  
+- **Practical Implementation**  
+- **Ethical Reflection**
 
----
-
-### 👥 **For Those Working in Pairs or Teams:**
-
-> ✅ **All pull requests must be reviewed by your code partner(s)** before merging.
-
-> ⚠️ **Never approve your own pull request!**
-> Every PR **must be reviewed and approved by another contributor** to ensure:
->
-> * Code readability
-> * Functional correctness
-> * Smooth integration across the whole team
-
-> This ensures **accountability** and prevents merge issues.
+You will demonstrate how AI can **automate tasks**, **enhance decision-making**, and **address challenges** in software development.
 
 ---
 
-## ✅ Before You Begin...
+## 🛠️ Tools & Resources
 
-Make sure you have:
-
-* Git installed on your machine → [Download Git](https://git-scm.com)
-* Access to our GitHub repository (DM if not)
-* Basic Git knowledge (this guide covers what you need)
-* **Python and Jupyter Notebook** installed:
-
-```bash
-pip install notebook
-```
+- **AI Tools:** GitHub Copilot, Testim.io, Google Colab  
+- **Datasets:** Kaggle, GitHub Issues  
+- **Libraries:** Scikit-learn, Pandas, Selenium
 
 ---
 
-## 💻 Using Jupyter Notebooks (Without VS Code)
+## 📚 Part 1: Theoretical Analysis (30%)
 
-### 1. After Cloning the Repository:
+### 1️⃣ Short Answer Questions
 
-```bash
-cd repository-name
-```
+- **Q1:** Explain how AI-driven code generation tools (e.g., GitHub Copilot) reduce development time. What are their limitations?  
+- **Q2:** Compare supervised and unsupervised learning in the context of automated bug detection.  
+- **Q3:** Why is bias mitigation critical when using AI for user experience personalization?
 
-### 2. Check for the Notebook:
+### 2️⃣ Case Study Analysis
 
-```bash
-ls *.ipynb  # On Linux/Mac
-dir *.ipynb # On Windows
-```
-
-### 3. Launch Jupyter:
-
-```bash
-jupyter notebook
-```
-
-Your browser will open the notebook interface.
-
-### 4. Open, Edit & Save:
-
-* Make your edits in the notebook
-* Press `Ctrl + S` or use `File > Save and Checkpoint`
-
-### 5. Stop the Server:
-
-* Close your browser
-* In terminal: `Ctrl + C`
-
-### 6. Commit & Push Changes:
-
-```bash
-git add filename.ipynb
-git commit -m "Update notebook with [your changes]"
-git push origin your-branch-name
-```
-
-> ❗ **Always pull from `main` before starting any work!**
->
-> ❗ **Never edit the same cell as your teammate to avoid conflicts.**
+- **Article:** *AI in DevOps: Automating Deployment Pipelines*  
+- **Question:** How does AIOps improve software deployment efficiency? Provide two examples.
 
 ---
 
-## 🧩 Our GitHub Workflow — Follow These Steps!
+## 💻 Part 2: Practical Implementation (60%)
 
-### Step 1: Clone the Repo
+### Task 1: AI-Powered Code Completion
 
-```bash
-git clone https://github.com/your-username/repository-name.git
-cd repository-name
-```
-
-### Step 2: Always Pull Latest Main
-
-```bash
-git checkout main
-git pull origin main
-```
-
-### Step 3: Create a Feature Branch
-
-```bash
-git checkout -b feature/your-task-name
-```
-
-### Step 4: Do Your Work
-
-Edit the notebook or Python code.
-
-### Step 5: Save and Commit
-
-```bash
-git add .
-git commit -m "Implement feature X"
-```
-
-### Step 6: Push Your Code
-
-```bash
-git push origin feature/your-task-name
-```
-
-### Step 7: Create a Pull Request
-
-Go to GitHub and:
-
-* Click **"Compare & Pull Request"**
-* Fill in the title, description, and what was done
-* Tag your **code partner for review**
-
-### ✅ **Step 8: Wait for Code Review**
-
-> 🧑‍🤝‍🧑 **Your teammate must review and approve your PR.**
-> 🔒 **DO NOT approve your own PR.**
-
-After receiving approval:
-
-```bash
-git checkout main
-git pull origin main
-git branch -d feature/your-task-name
-git push origin --delete feature/your-task-name
-```
+- **Tool:** GitHub Copilot or Tabnine  
+- **Task:**  
+  - Write a Python function to sort a list of dictionaries by a specific key.  
+  - Compare the AI-suggested code with your manual implementation.  
+  - Document which version is more efficient and why.  
+- **Deliverable:** Code snippets + 200-word analysis.
 
 ---
 
-## 🛑 Team Rules - Must Follow
+### Task 2: Automated Testing with AI
 
-❌ **DON'T:**
-
-* Push directly to `main`
-* Use `--force` on shared branches
-* Commit API keys or secrets
-* Approve your own PR
-
-✅ **DO:**
-
-* Work only on your own branches
-* Always `git pull origin main` before editing
-* Write **clear commit messages**
-* Run and test code before pushing
-* Get **at least one approval** before merging
+- **Framework:** Selenium IDE with AI plugins or Testim.io  
+- **Task:**  
+  - Automate a test case for a login page (valid/invalid credentials).  
+  - Run the test and capture results (success/failure rates).  
+  - Explain how AI improves test coverage compared to manual testing.  
+- **Deliverable:** Test script + screenshot of results + 150-word summary.
 
 ---
 
-## 🛠️ Helpful Git Commands
+### Task 3: Predictive Analytics for Resource Allocation
 
-```bash
-git status
-git checkout branch-name
-git branch -a
-git log --oneline
-git reset --soft HEAD~1
-```
-
-### 🔧 Merge Conflict Resolution
-
-```bash
-git checkout main
-git pull origin main
-git checkout your-branch
-git merge main
-# Resolve conflicts
-git add .
-git commit -m "Fix merge conflicts"
-git push origin your-branch
-```
+- **Dataset:** Kaggle Breast Cancer Dataset  
+- **Goal:**  
+  - Preprocess data (clean, label, split).  
+  - Train a model (e.g., Random Forest) to predict issue priority (high/medium/low).  
+  - Evaluate using accuracy and F1-score.  
+- **Deliverable:** Jupyter Notebook + performance metrics.
 
 ---
 
-## 🤝 If You Forked the Repo
+## ⚖️ Part 3: Ethical Reflection (10%)
 
-```bash
-git remote add upstream https://github.com/original-owner/repository-name.git
-git checkout main
-git fetch upstream
-git merge upstream/main
-git push origin main
-```
+- **Prompt:** Your predictive model from Task 3 is deployed in a company. Discuss:  
+  - Potential biases in the dataset (e.g., underrepresented teams).  
+  - How fairness tools like IBM AI Fairness 360 could address these biases.
 
 ---
 
-## 🧠 Quick Git + Jupyter Flow Recap
+## 🚀 Bonus Task (Extra 10%)
 
-```bash
-git checkout main
-git pull origin main
-git checkout -b feature/your-change
-jupyter notebook
-# Make changes
-git add notebook.ipynb
-git commit -m "Describe your update"
-git push origin feature/your-change
-```
+**Innovation Challenge:** Propose an AI tool to solve a software engineering problem not covered in class (e.g., automated documentation generation).
+
+- **Deliverable:** 1-page proposal outlining the tool’s purpose, workflow, and impact.
 
 ---
-
-## 🆘 Need Help?
-
-* DM me directly ✅
-* Open a GitHub Issue 📌
-* Ask in our group chat 💬
-
----
-
-### 👏 Final Thoughts
-
-Thanks for reading this guide! Following the process will keep our project organized and collaborative. Let’s support each other and **ship quality code together 🚀**
-
-> 🧠 *Remember: This project is a learning opportunity — let’s make it smooth and fun!*
-
----
-
